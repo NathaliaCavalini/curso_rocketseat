@@ -23,7 +23,9 @@
     --switch-bg-url: url(./assets/sun.svg);
 }
 body {
-    background: var(--bg-url) no-repeat top center/cover;/*Colocar imagem estática de background*/
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+    /*Colocar imagem estática de background*/
     /*background-repeat: no-repeat;/*Faz com que a imagem de fundo nao se repita*/
     /*background-position: top center;/*Deixa a imagem centralizada*/
     /*background-size: cover; /*Cobre toda o background*/
@@ -130,4 +132,14 @@ footer {
     padding: 24px p;
     text-align: center;
     font-size: 14px;
+}
+/*Media queries*/
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
